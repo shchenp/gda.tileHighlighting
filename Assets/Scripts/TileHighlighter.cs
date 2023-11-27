@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class InteractTile : MonoBehaviour
+public class TileHighlighter : MonoBehaviour
 {
    [SerializeField]
    private LayerMask _layer;
@@ -26,7 +26,7 @@ public class InteractTile : MonoBehaviour
       {
          _currentRenderer = hitInfo.collider.gameObject.GetComponent<Renderer>();
          
-         if (_currentRenderer != _previousRenderer || _previousRenderer == null)
+         if (_currentRenderer != _previousRenderer)
          {
             TryResetHighlight();
             HighlightTile(hitInfo);
