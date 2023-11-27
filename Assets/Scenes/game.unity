@@ -598,6 +598,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _color: {r: 0.9811321, g: 0.1610537, b: 0.25147516, a: 0}
+  _defaultMaterial: {fileID: 2100000, guid: e11820def211aac499d1bcf50c3e3f8a, type: 2}
 --- !u!1001 &70245331
 PrefabInstance:
   m_ObjectHideFlags: 0
